@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:listDivider">@drawable/divider_bg</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- 低栏RadioButton的样式 -->
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@drawable/tab_textcolor_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="tab_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <!-- 上面这一句可以把radiobutton的图标去掉 -->
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textColor">@drawable/tab_textcolor_selector</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+</resources>

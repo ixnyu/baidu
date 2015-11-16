@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_select_rll_01"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/item_fenlei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商店分类"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:drawableRight="@mipmap/shoplist_unfold_arrow_down"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/wallet_base_listview_divider_line"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_fenlei"
+            android:layout_toEndOf="@+id/item_fenlei"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/item_select_rll_02"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/item_paixu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排序"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:drawableRight="@mipmap/shoplist_unfold_arrow_down"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/wallet_base_listview_divider_line"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_select_rll_03"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/item_baidupaisong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百度配送"
+            android:textColor="#000000"
+            android:textSize="13dp"
+
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_button"
+            android:layout_toStartOf="@+id/item_button" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:src="@mipmap/slip_off_img_bd_express"
+            android:layout_alignBottom="@+id/item_baidupaisong"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/item_button" />
+    </RelativeLayout>
+
+        
+
+</LinearLayout>

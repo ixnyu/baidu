@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="海虾记"
+            android:textColor="#000000"
+            android:id="@+id/eat_list_item_title" />
+        <RatingBar
+            android:paddingTop="3dp"
+            android:id="@+id/eat_list_item_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:isIndicator="true"
+            android:progressDrawable="@drawable/hom_item_ratingbar"
+            android:rating="4.3"
+
+            android:layout_below="@+id/eat_list_item_title"
+            android:layout_alignLeft="@+id/eat_list_item_title"
+            android:layout_alignStart="@+id/eat_list_item_title" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="因为你选择健身就靠吃推荐给你"
+            android:textSize="10dp"
+            android:id="@+id/eat_list_item_des"
+            android:layout_alignTop="@+id/eat_list_item_rating"
+            android:layout_toRightOf="@+id/eat_list_item_rating"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+        <ImageView
+            android:id="@+id/eat_list_item_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/balance_modify_arrow"
+            android:layout_above="@+id/eat_list_item_des"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/wallet_base_listview_divider_line"
+        android:layout_below="@+id/item_rating"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/eat_list_item_firsticon"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/hongren01"/>
+            <TextView
+                android:id="@+id/eat_list_item_firsttitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="招牌麻辣小龙虾"
+                android:singleLine="true"
+                android:textSize="11dp"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/eat_list_item_firsticon"
+                android:layout_alignLeft="@+id/eat_list_item_firsticon" />
+            <TextView
+                android:id="@+id/eat_list_item_firstprice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="98"
+                android:layout_below="@+id/eat_list_item_firsttitle"
+                android:layout_alignLeft="@+id/eat_list_item_firsttitle"
+                android:textColor="#FC605E"
+               />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/eat_list_item_secondicon"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/hongren01"/>
+            <TextView
+                android:id="@+id/eat_list_item_secondtitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="招牌麻辣小龙虾"
+                android:singleLine="true"
+                android:textSize="11dp"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/eat_list_item_secondicon"
+                android:layout_alignLeft="@+id/eat_list_item_secondicon" />
+            <TextView
+                android:id="@+id/eat_list_item_secondprice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="￥98"
+                android:layout_below="@+id/eat_list_item_secondtitle"
+                android:layout_alignLeft="@+id/eat_list_item_secondtitle"
+                android:layout_alignStart="@+id/eat_list_item_secondtitle"
+                android:textColor="#FC605E"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/eat_list_item_thirdticon"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/hongren01"/>
+            <TextView
+                android:id="@+id/eat_list_item_thirdtitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="招牌麻辣小龙虾"
+                android:singleLine="true"
+                android:textSize="11dp"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/eat_list_item_thirdticon"
+                android:layout_alignLeft="@+id/eat_list_item_thirdticon" />
+            <TextView
+                android:id="@+id/eat_list_thirdprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥98"
+                android:layout_below="@+id/eat_list_item_thirdtitle"
+                android:layout_alignLeft="@+id/eat_list_item_thirdtitle"
+                android:layout_alignStart="@+id/eat_list_item_thirdtitle"
+
+                android:textColor="#FC605E"
+             />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

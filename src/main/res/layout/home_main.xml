@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.administrator.BaiDuWaiMai.View.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_icon_home_noraml"
+
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_eat"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_icon_rank_noraml"
+            android:text="吃啥" />
+
+        <RadioButton
+            android:id="@+id/rb_dingdan"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_icon_dingdan_noraml"
+            android:text="订单" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_icon_me_noraml"
+            android:text="我的" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

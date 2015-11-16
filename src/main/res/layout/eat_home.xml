@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FC605E">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吃啥"
+            android:textColor="@color/dingdantitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/abc_ic_search_api_mtrl_alpha"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <com.tuesda.walker.circlerefresh.CircleRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/eat_fra_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:AniBackColor="#FC605E"
+        app:AniForeColor="#FFFFFF"
+        app:CircleSmaller="3">
+
+        <com.example.administrator.BaiDuWaiMai.View.BaseListView
+            android:id="@+id/eat_fra_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.tuesda.walker.circlerefresh.CircleRefreshLayout>
+
+</LinearLayout>

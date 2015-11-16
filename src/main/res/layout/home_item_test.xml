@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+
+            android:id="@+id/home_item_iv"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/home_item_list1" />
+
+        <TextView
+            android:id="@+id/home_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/home_item_iv"
+            android:layout_marginLeft="10dp"
+
+            android:layout_toEndOf="@+id/home_item_iv"
+            android:layout_toRightOf="@+id/home_item_iv"
+            android:text="披萨家族"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <RatingBar
+            android:id="@+id/item_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/home_item_tv"
+            android:layout_alignStart="@+id/home_item_tv"
+            android:layout_below="@+id/home_item_tv"
+            android:layout_marginLeft="-2dp"
+
+            android:isIndicator="true"
+            android:progressDrawable="@drawable/hom_item_ratingbar"
+            android:rating="2.5" />
+
+        <TextView
+            android:id="@+id/home_item_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月售700份"
+            android:textSize="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/item_rating"
+            android:layout_toRightOf="@+id/item_rating"
+            />
+
+        <TextView
+            android:id="@+id/home_item_peisong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/home_item_iv"
+            android:layout_alignLeft="@+id/item_rating"
+            android:layout_alignStart="@+id/item_rating"
+            android:text="起送￥25|配送￥1"
+            android:textSize="10dp" />
+        <!--这里是劵图标-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_above="@+id/item_rating"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/item_juan" />
+        <!--这里是付图标-->
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_above="@+id/item_rating"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView"
+            android:src="@mipmap/item_fu" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/item_rating"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/home_item_peisong"
+            android:padding="1dp"
+            android:text="百度配送"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/home_item_time"
+            android:layout_toLeftOf="@+id/home_item_time"
+            android:layout_toStartOf="@+id/home_item_time"
+            android:text="20分钟"
+            android:textColor="#FC605E"
+            android:textSize="11dp" />
+
+        <TextView
+
+            android:id="@+id/home_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignTop="@+id/home_item_peisong"
+            android:text="送达"
+            android:textSize="9dp" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/home_item_sp_bg"/>
+
+</LinearLayout>
